@@ -1,0 +1,434 @@
+@font-face {
+    font-family: "MuseoAZ";
+    src: url("../fonts/MuseoAZ-300.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MuseoAZ";
+    src: url("../fonts/MuseoAZ-500.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MuseoAZ";
+    src: url("../fonts/MuseoAZ-700.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MuseoAZ";
+    src: url("../fonts/MuseoAZ-900.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+.single-stm_courses .wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.stm-courses-categories-list {
+    padding-left: 20px;
+    margin-left: 0;
+    margin-top: 0;
+    list-style: none;
+}
+.stm-courses-categories-list li {
+    position: relative;
+    padding: 20px 0 0;
+    margin-bottom: 20px;
+}
+.stm-courses-categories-list li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #a1badb;
+    top: 0;
+    left: 0;
+}
+.stm-courses-categories-list li:first-of-type {
+    padding-top: 0;
+}
+.stm-courses-categories-list li:first-of-type::after {
+    content: none;
+}
+.stm-courses-categories-list li a {
+    font-weight: bold;
+    font-size: 16px;
+    color: #17365E;
+}
+.stm-courses-categories-list li.active a {
+    color: #195ec8;
+}
+.stm-courses-categories-list li a:hover {
+    color: #195ec8;
+    text-decoration: none;
+}
+
+.stm-toggle-collapse {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.stm-toggle-collapse svg {
+    color: #195EC8;
+    vertical-align: bottom;
+}
+.stm-toggle-collapse.open svg {
+    transform: rotate(-180deg);
+}
+
+.stm-courses-subcategories-list {
+    list-style: none;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+.stm-courses-subcategories-list li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+.stm-courses-subcategories-list li::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #195EC8;
+    top: 9px;
+    left: -10px;
+    position: absolute;
+}
+.stm-courses-subcategories-list li::after {
+    content: none;
+}
+.stm-courses-subcategories-list li a {
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #17365E;
+}
+
+.single-stm_courses .elementor-widget-page-title .elementor-heading-title {
+    font-family: "MuseoAZ", sans-serif;
+}
+
+.stm-course-content * {
+    color: #17365E;
+}
+.stm-course-content p {
+    line-height: 30px;
+    color: #17365E;
+    font-weight: 400;
+    font-size: 15px;
+}
+.stm-course-content a {
+    text-decoration: underline;
+    color: var(--link_color);
+}
+.stm-course-content a:hover {
+    text-decoration: none;
+}
+
+.stm_breadcrumbs_unit  .navxtBreads {
+    font-size: 0;
+    line-height: 15px;
+    color: #2C66AE;
+}
+.stm_breadcrumbs_unit  .navxtBreads > span:not(:last-of-type)::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #195ec8;
+    width: 4px;
+    height: 4px;
+    margin: 0 12px;
+    vertical-align: middle;
+}
+.stm_breadcrumbs_unit  .navxtBreads a.home {
+    color: #17365E;
+    font-weight: bold;
+}
+
+.stm_breadcrumbs_unit  .navxtBreads a,
+.stm_breadcrumbs_unit  .navxtBreads span {
+    color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.stm-register-form-wrap {
+
+}
+.stm-register-form-wrap form {
+    background: #EAF0F7;
+    box-shadow: -8px 8px 20px rgba(43, 88, 143, 0.05);
+    border-radius: 30px;
+    padding: 34px 40px 40px 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.stm-register-form--title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #195ec8;
+    text-align: center;
+    font-family: "MuseoAZ", sans-serif;
+    padding-bottom: 9px;
+}
+.stm-register-form-wrap .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.stm-register-form-wrap .form-group input {
+    margin-bottom: 20px;
+    flex: 0 0 calc(50% - 8px);
+    border-radius: 3px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    padding: 19px 0 19px 42px;
+    color: #1D4271;
+}
+.stm-register-form-wrap .button-wrap {
+    justify-content: center;
+}
+.stm-register-form-wrap .button-wrap .button {
+    background: #195ec8;
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    line-height: 23px;
+    min-width: 110px;
+    height: 50px;
+    text-align: center;
+    padding: 13px 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    word-wrap: break-word;
+    border-radius: 3px;
+    border: 1px solid #195ec8;
+    text-shadow: none;
+    vertical-align: inherit;
+}
+.stm-register-form-wrap .button-wrap .button:hover {
+    background: #fff;
+    color: #195ec8;
+}
+
+.wpcf7 form {
+    background: #EAF0F7;
+    box-shadow: -8px 8px 20px rgba(43, 88, 143, 0.05);
+    border-radius: 30px;
+    padding: 34px 40px 40px 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.wpcf7 .wpcf7-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #195ec8;
+    text-align: center;
+    font-family: "MuseoAZ", sans-serif;
+    padding-bottom: 9px;
+}
+.wpcf7 .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wpcf7 .form-group-item {
+    margin-bottom: 20px;
+    flex: 0 0 calc(50% - 8px);
+}
+.wpcf7 .form-group-item p {
+    margin: 0;
+}
+.wpcf7 .form-group input {
+    border-radius: 3px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 18px 0 18px 42px;
+    color: #1D4271;
+    height: 52px;
+}
+.wpcf7 .button-wrap {
+    justify-content: center;
+}
+.wpcf7 .button-wrap p {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.wpcf7 .button-wrap .wpcf7-submit {
+    background: #195ec8;
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    line-height: 23px;
+    min-width: 110px;
+    height: 50px;
+    text-align: center;
+    padding: 13px 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    word-wrap: break-word;
+    border-radius: 3px;
+    border: 1px solid #195ec8;
+    text-shadow: none;
+    vertical-align: inherit;
+}
+.wpcf7 .button-wrap .wpcf7-submit:hover {
+    background: #fff;
+    color: #195ec8;
+}
+.wpcf7 .button-wrap .wpcf7-spinner {
+    min-width: 24px;
+    position: absolute;
+    left: 50%;
+    margin-left: 65px;
+}
+
+
+.stm-course-info-list {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.stm-course-info-list li {
+    flex: 0 1 calc(50% - 30px);
+}
+.stm-course-info-list li div {
+    width: 100%;
+    height: 3px;
+    background-color: #EAF0F7;
+    margin-bottom: 19px;
+    position: relative;
+}
+.stm-course-info-list li div span {
+    position: absolute;
+    background-color: #195ec8;
+    width: 30%;
+    height: 3px;
+}
+.stm-course-info-list li h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #17365E;
+    padding-bottom: 2px;
+    margin-bottom: 0;
+}
+.stm-course-info-list li p {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 38px;
+    color: #17365E;
+    padding-bottom: 12px;
+}
+
+
+.hfe-nav-menu .wpml-ls-menu-item {
+
+}
+.hfe-nav-menu .wpml-ls-menu-item .elementor-button {
+    background: transparent;
+    border: 0 transparent;
+}
+.hfe-nav-menu .wpml-ls-item .hfe-has-submenu-container .hfe-menu-item {
+    position: relative;
+    padding-right: 20px !important;
+}
+.hfe-nav-menu .wpml-ls-menu-item .hfe-menu-toggle.sub-arrow {
+    display: block;
+    width: 10px;
+    border: 5px solid transparent;
+    border-top-color: #000;
+    margin-top: -4px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.hfe-nav-menu .wpml-ls-menu-item .hfe-menu-toggle.sub-arrow i {
+    display: none !important;
+}
+.hfe-nav-menu .wpml-ls-menu-item .sub-menu li a.hfe-sub-menu-item {
+    display: block;
+}
+
+.elementor-widget-image[data-widget_type="theme-course-image.default"] img {
+	object-position: center center !important;
+}
+
+@media (max-width: 767px) {
+    .stm-courses-categories-list {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .wpml-ls-item .hfe-has-submenu-container .hfe-menu-item {
+        display: inline-block;
+    }
+    .stm-course-info-list li {
+        flex: 0 1 100%;
+    }
+    .wpcf7 form {
+        padding: 15px 5px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .stm-main-section-courses .stm-sidebar-courses,
+    .stm-main-section-courses .stm-content-courses {
+        width: 100%;
+    }
+    .stm-sidebar-courses {
+        margin-bottom: 30px;
+    }
+    .stm-course-item .stm-course-info {
+        flex-direction: column;
+    }
+    .stm-course-info .stm-course-image {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+    .stm-course-info .stm-course-info__inside {
+        flex: 0 1 100%;
+    }
+    .stm-course-info .stm-course-image img {
+        width: 100%;
+    }
+    .stm-results-header, .stm-results-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .stm-pagination-section {
+
+    }
+}
