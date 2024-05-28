@@ -279,8 +279,10 @@ class Filters
             }
         }
 
-        $courses = new WP_Query($args);
 
+        $courses = new WP_Query($args);
+		error_log(print_r($args, true));
+error_log(print_r($courses->request, true));
         if (!wp_doing_ajax()) {
             return $courses;
         }
@@ -369,8 +371,22 @@ class Filters
                     if (is_array($value)) {
                         $meta_query['value'] = array_values($value);
                     }
-
+                    $args['meta_query']['relation'] = 'OR';
                     $args['meta_query'][]  = $meta_query;
+					foreach ($value as $v){
+						$args['meta_query'][] = array(
+		                'key'     => $key,
+		                'value'   => sprintf( ':"%s";', $v ),
+		                'compare' => 'LIKE'
+	                );
+
+						 $args['meta_query'][] = array(
+		                'key'     => $key,
+		                'value'   => sprintf( ';i:%d;', $v ),
+		                'compare' => 'LIKE'
+	                );
+					}
+
                 }
             }
         }
